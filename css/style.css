@@ -1,0 +1,418 @@
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    /*header, div,ul list*/
+    box-sizing: border-box;
+}
+
+/* common class */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 110px;
+    display: block;
+}
+
+h1,
+.heading-1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 0 0 20px;
+    line-height: 1.2;
+    /* line height heading & paragraphs 1.1/1.2 */
+}
+
+h2,
+.heading-2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #276baf;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    /* line height heading & paragraphs 1.1/1.2 */
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(253, 253, 253);
+    margin: 0 0 20px;
+    line-height: 1.2;
+}
+
+/* navbar */
+.nav-links li a {
+    display: block;
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+}
+
+.cmn-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 6px;
+    background-color: aqua;
+    color: rgb(63, 63, 4);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: 1px solid;
+}
+
+.cmn-btn:hover {
+    background-color: red;
+}
+
+.cmn-gap {
+    padding: 100px 0;
+}
+
+.ban-btn {
+    background-color: rgb(68, 165, 12);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+
+}
+
+.nav-links li {
+    margin: 0 35px 0 0;
+    /* t r b l */
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.hamburgur {
+    font-size: 20px;
+    display: none;
+}
+
+/* navbar */
+/* banner */
+.banner {
+    /* compulsory */
+    min-height: calc(100vh - 100px);
+    background: url(../images/banner-img.jpg);
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+/* banner */
+/* figure img{
+    border: 5px solid red;
+} */
+/* about-child */
+.about-child {
+    display: flex;
+    flex-wrap: wrap;
+    /*responsive friendly*/
+    margin: 0 -15px;
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right p {
+    color: black;
+}
+
+
+span {
+    color: #D00000;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.abt-btn {
+    background-color: #001F51;
+    color: #ffff;
+}
+
+/* about-child */
+/* card */
+.card-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.cmn-card {
+    width: calc(33.33% - 30px);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(233, 237, 240);
+    box-shadow: 15px 15px 15px;
+}
+
+.card p {
+    color: #001F51;
+    font-weight: 500;
+}
+
+.card-upper,
+.card-lower {
+    text-align: center;
+}
+
+/* card */
+/* footer-child */
+.footer-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cmn-footer {
+    width: 33.33%;
+    padding: 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 14px;
+    border: 1px solid #fff;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+ul li {
+    margin-bottom: 25px;
+
+}
+
+.footer {
+    background-color: black;
+    padding: 75px 0;
+}
+
+li a {
+    color: white;
+}
+
+.foot-head {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+
+/* footer-child */
+.nav-links li a {
+    color: black;
+}
+
+/* responsive */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+    /* navbar */
+    .hamburgur {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .cmn-btn {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    /* navbar */
+    /* banner */
+    h1 {
+        font-size: 40px;
+        margin: 0 0 10px;
+    }
+
+    p {
+        margin: 0 0 10px;
+        font-size: 10px;
+    }
+
+    .banner-child {
+        text-align: center;
+    }
+
+    /* banner */
+    /* about */
+    .left,
+    .right {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* about */
+    h2 {
+        font-size: 36px;
+    }
+
+    .cmn-card {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .cmn-gap {
+        padding: 40px 0;
+    }
+
+    /* card */
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* navbar */
+    .hamburgur {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .cmn-btn {
+        padding: 10px 40px;
+        font-size: 25px;
+    }
+
+    /* navbar */
+    /* banner */
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    /* banner */
+    /* about */
+    .left,
+    .right {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* about */
+    /* card */
+    .cmn-card {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    /* card */
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* navbar */
+    .hamburgur {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .cmn-btn {
+        padding: 10px 40px;
+        font-size: 25px;
+    }
+
+    /* navbar */
+    /* about */
+    .left,
+    .right {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* about */
+    /* card */
+    .cmn-card {
+        width: calc(50% - 30px);
+        margin: 0 0 20px;
+    }
+
+    /* card */
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* responsive */
